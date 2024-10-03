@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pos"
+version = "0.1.0"
+description = ""
+authors = ["diogenes69 <diogenes_monegro@claro.com.do>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+pyside6 = "^6.7.3"
+peewee = "^3.17.6"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
