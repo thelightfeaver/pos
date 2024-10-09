@@ -6,7 +6,7 @@ class Product(Model):
     id = AutoField()
     name = CharField()
     description = CharField()
-    details = BooleanField()
+    details = DecimalField()
     date = DateField()
     price_sale = DecimalField()
     stock = IntegerField()
