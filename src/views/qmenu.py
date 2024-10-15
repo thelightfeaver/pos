@@ -1,4 +1,8 @@
+from .qproduct import QProduct
+
 from PySide6.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QLabel, QPushButton, QStackedLayout
+
+
 
 class QMenu(QWidget):
     def __init__(self):
@@ -9,7 +13,7 @@ class QMenu(QWidget):
 
     def _build(self):
         # Add side layout
-        self.side_layout = QStackedLayout()
+        self.side_layout = QVBoxLayout()
         self.side_layout.addWidget(QLabel('Menu'))
         
         # Add buttons
@@ -28,7 +32,8 @@ class QMenu(QWidget):
         pass
 
     def _show_products(self):
-        pass
+        self.qproduct = QProduct()
+        self.qproduct.show()
 
     def _show_orders(self):
         pass
